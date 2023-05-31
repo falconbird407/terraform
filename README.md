@@ -18,3 +18,5 @@ _You **can** combine them_
 ~~Striked Text~~
 
 ***~~Italic, bold, and striked text~~***
+
+
