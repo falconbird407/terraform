@@ -1,0 +1,3 @@
+- name: Set Debug Environment Variables
+  run: |
+    echo "::set-env name=DEBUG_VAR::debug_value"
