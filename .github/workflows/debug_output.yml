@@ -1,0 +1,4 @@
+- name: Print Environment Variables
+  run: |
+    echo "TF_API_TOKEN: $TF_API_TOKEN"
+    echo "TF_CLI_ARGS_INIT: $TF_CLI_ARGS_INIT"
