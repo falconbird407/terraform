@@ -1,0 +1,12 @@
+name: Terraform Deployment
+on:
+  push:
+    branches:
+      - main  # Adjust the branch name as needed
+  pull_request:
+    branches:
+      - main  # Adjust the branch name as needed
+env:
+  TF_API_TOKEN: ${{ secrets.TF_API_TOKEN }}
+  TF_CLI_ARGS_INIT: "-input=false"
+
