@@ -12,7 +12,7 @@ env:
 ## ...
 jobs:
     terraform:
-      if: github.repository != 'hashicorp-education/learn-terraform-github-actions'
+      if: github.repository != '2SLINK/API-Driven'
       name: "Terraform Apply"
       runs-on: ubuntu-latest
       permissions:
