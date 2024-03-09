@@ -1,0 +1,9 @@
+- name: Terraform Init
+  run: terraform init
+
+- name: Terraform Plan
+  run: terraform plan
+
+- name: Terraform Apply
+  if: github.ref == 'refs/heads/main' && github.event_name == 'push' # Adjust conditions as needed
+  run: terraform apply -auto-approve
