@@ -14,4 +14,11 @@ terraform {
     dynamodb_table = "terraform-lock"          # DynamoDB table used for state locking.
     encrypt        = true                      # Ensures the state is encrypted at rest in S3.
   }
+
+  # Configuration for the AWS provider.
+  provider "aws" {
+    region     = var.region # AWS region where resources will be provisioned.
+    access_key = var.AWS_ACCESS_KEY_ID
+    secret_key = var.AWS_SECRET_ACCESS_KEY
+  }
 }
